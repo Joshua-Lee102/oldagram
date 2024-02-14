@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 375px;
+    font-family: "Source Sans 3";
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1.5px solid lightgray;
+}
+
+#logo{
+    width: 127px;
+    height: auto;
+}
+
+#user-avatar{
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+    border-radius: 20px;
+}
+
+.post-avatar{
+    width: 35px;
+    height: 35px;
+    float:left;
+    border-radius: 20px;
+    margin: auto 10px; 
+}
+
+.name, 
+.likes{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.name{
+    margin: 11px 0 0 0;
+}
+
+.location{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 13px 0;
+}
+
+#post{
+    width: 375px;
+    height: 375px;
+}
+
+#heart-icon,
+#comment-icon,
+#dm-icon{
+   width: 25px;
+   height: 25px; 
+   margin: 10px 0 8px 10px; 
+}
+
+#heart-icon:hover{
+     filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(7500%) hue-rotate(356deg)brightness(100%) contrast(119%);
+}
+
+#comment-icon:hover{
+    filter: brightness(0) saturate(100%) invert(39%) sepia(95%) saturate(3443%) hue-rotate(74deg) brightness(103%) contrast(92%);
+}
+
+#dm-icon:hover{
+    filter: brightness(0) saturate(100%) invert(29%) sepia(92%) saturate(6391%) hue-rotate(204deg) brightness(97%) contrast(103%);
+}
+
+.likes{
+   margin: 0 0 0 13px; 
+}
+
+.comment-username,
+.comment{
+    margin: 12px 0 0 6px;
+    font-size: 13px;
+}
+
+.comment-username{
+    font-weight: 700;
+}
+
+.comment{
+    font-weight:400;
+    margin-bottom: 15px;
+}
+
+.spaceBelow{
+    height: 25px;
+    background: #EDEDED;;
+}
