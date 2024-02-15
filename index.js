@@ -29,7 +29,7 @@ const posts = [
 ]
 
 function renderPost(post) {
-    
+
     const sectionOne = document.createElement('div');
     sectionOne.className = 'section-one';
 
@@ -75,20 +75,20 @@ function renderPost(post) {
     const comment = document.createElement('p');
     comment.className = 'comment';
     comment.innerHTML = `<span class='comment-username'>${post.username}</span> ${post.comment}`;
-    
+
     const spaceBelow = document.createElement('div')
     spaceBelow.className = 'spaceBelow'
     spaceBelow.texContent = ""
-    
+
     function increaseLikes(){
         post.likes++
         likes.textContent = `${post.likes} likes` 
     }
-    
+
     //Couldn't get dbclick to work
-    iconHeart.addEventListener("click", increaseLikes)
-    postImage.addEventListener("click", increaseLikes)
-    
+    iconHeart.addEventListener("dblclick", increaseLikes)
+    postImage.addEventListener("dblclick", increaseLikes)
+
     sectionOne.appendChild(avatar);
     sectionOne.appendChild(name);
     sectionOne.appendChild(location);
